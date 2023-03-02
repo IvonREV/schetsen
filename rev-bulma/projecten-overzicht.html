@@ -1,0 +1,326 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projectenoverzicht pagina</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9acd5aad96.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/tabs.js"></script>
+    <script defer src="/js/menu.js"></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="styles/custom.css" />
+    <!-- <link rel="stylesheet" href="styles/debug.css" />-->
+
+    <style></style>
+  </head>
+  <body>
+    <!-- main menu website -->
+    <section class="section"></section>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- always left -->
+          <a class="navbar-item" href="/index.html">
+            <img
+              src="/images/rev-logo-400.png"
+              style="max-height: 5rem; width: fit-content"
+            />
+          </a>
+          <a
+            class="navbar-burger rev-menu-toggle-mobile"
+            role="button"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="mainMenuWebsite"
+          >
+            <!-- always in navbar-brand -->
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="mainMenuWebsite" class="navbar-menu is-hidden-touch">
+          <!-- desktop visible -->
+          <div class="navbar-start">
+            <!-- left side appearance -->
+            <a class="navbar-item" href="#"> Projecten</a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Kennisbank
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> nader te bepalen </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+            <a class="navbar-item" href="#"> Onderhoudskosten </a>
+            <a class="navbar-item" href="#"> Bouwgebreken </a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Beheer
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> API tester </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+          </div>
+          <div class="navbar-end">
+            <!-- right side appearance -->
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="#"> MIJN PROJECTEN </a>
+                <a class="button is-secundary" href="#"> UITLOGGEN </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end main menu -->
+    
+    <section class="section">
+      <h1 class="subtitle is-3 has-text-centered has-text-weight-bold">
+        Overzicht van projecten
+      </h1>
+    </section>
+    
+
+    <section class="container is-small has-text-centered">
+      <h2 class="has-text-weight-bold mt-2 mb-2">Soort gebouw</h2>
+
+      <div class="select is-rounded">
+        <select>
+          <option>Selecteer soort gebouw</option>
+          <option>Agrarisch</option>
+          <option>Bedrijfsgebouwen</option>
+          <option>Commerciele woningen</option>
+          <option>Garages</option>
+          <option>Gemeentelijk Vastgoed</option>
+          <option>Herbestemming</option>
+          <option>Kantoren</option>
+          <option>Onderwijs</option>
+          <option>Overige</option>
+          <option>Particuliere woningen</option>
+          <option>Recreatie</option>
+          <option>Winkels</option>
+          <option>Zorg</option>
+        </select>
+      </div>
+
+      <h2 class="has-text-weight-bold mt-2 mb-2">Gebouwtype</h2>
+
+      <div class="select is-rounded">
+        <select>
+          <option>Kies gebouwtype</option>
+          <option>Bedrijf: Kleinschalig</option>
+          <option>Bedrijf: Middenschalig</option>
+          <option>Bedrijf: Grootschalig</option>
+          <option>Bedrijf: Verzamelgebouw</option>
+          <option>Opslag/distributie: Kleinschalig </option>
+          <option>Opslag/distributie: Grootschalig</option>
+          <option>Showroom/garage</option>
+        </select>
+      </div>
+      <h2 class="has-text-weight-bold mt-2 mb-2">Bouwperiode</h2>
+
+      <div class="select is-rounded">
+        <select>
+          <option>Kies bouwperiode</option>
+          <option>[Alles]</option>
+          <option>voor 1900 </option>
+          <option>1900-1930</option>
+          <option>1930-1950</option>
+          <option>1950-1970</option>
+          <option>1970-1990</option>
+          <option>1990-2010</option>
+          <option>2010-heden</option>
+        </select>
+      </div>
+      <h2 class="has-text-weight-bold mt-2 mb-2">Daksoort</h2>
+
+      <div class="select is-rounded">
+        <select>
+          <option>Kies daksoort</option>
+          <option>[Alles]</option>
+          <option>Hellend </option>
+          <option>Plat</option>
+          <option>Plat en hellend</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section has-text-centered">
+      <div class="columns">
+        
+        <div class="column">
+            <div class="card">
+                <div class="card-content p-3 has-background-primary">
+                    <h3 class="title has-text-white is-4">
+                        WT1 Kleinschalig
+                    </h3>
+                </div>
+                <div class="card-image">
+                    <figure class="image is-4by2">
+                        <img src="/images/WT1bewerkt.jpg">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content has-text-left">
+                        <p>Bouwjaar: 2006<br> 
+                            BVO: 22000<br>
+                            Bedrijf:grootschalig<br>
+                            Bedrijfsgebouwen
+                        </p>
+                    </div>
+                </div>
+                <footer class="card-footer has-background-link-dark">
+                    <a href="/gebouwtype-pagina.html" class="card-footer-item has-text-white">Toon details</a>
+                  </footer>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-content p-3 has-background-primary">
+                    <h3 class="title has-text-white is-4">
+                        WT1 Kleinschalig
+                    </h3>
+                </div>
+                <div class="card-image">
+                    <figure class="image is-4by2">
+                        <img src="/images/WT1bewerkt.jpg">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content has-text-left">
+                        <p>Bouwjaar: 2006<br> 
+                            BVO: 22000<br>
+                            Bedrijf:grootschalig<br>
+                            Bedrijfsgebouwen
+                        </p>
+                    </div>
+                </div>
+                <footer class="card-footer has-background-link-dark">
+                    <a href="/gebouwtype-pagina.html" class="card-footer-item has-text-white">Toon details</a>
+                  </footer>
+            </div>
+        </div><div class="column">
+            <div class="card">
+                <div class="card-content p-3 has-background-primary">
+                    <h3 class="title has-text-white is-4">
+                        WT1 Kleinschalig
+                    </h3>
+                </div>
+                <div class="card-image">
+                    <figure class="image is-4by2">
+                        <img src="/images/WT1bewerkt.jpg">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content has-text-left">
+                        <p>Bouwjaar: 2006<br> 
+                            BVO: 22000<br>
+                            Bedrijf:grootschalig<br>
+                            Bedrijfsgebouwen
+                        </p>
+                    </div>
+                </div>
+                <footer class="card-footer has-background-link-dark">
+                    <a href="/gebouwtype-pagina.html" class="card-footer-item has-text-white">Toon details</a>
+                  </footer>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-content p-3 has-background-primary">
+                    <h3 class="title has-text-white is-4">
+                        WT1 Kleinschalig
+                    </h3>
+                </div>
+                <div class="card-image">
+                    <figure class="image is-4by2">
+                        <img src="/images/WT1bewerkt.jpg">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content has-text-left">
+                        <p>Bouwjaar: 2006<br> 
+                            BVO: 22000<br>
+                            Bedrijf:grootschalig<br>
+                            Bedrijfsgebouwen
+                        </p>
+                    </div>
+                </div>
+                <footer class="card-footer has-background-link-dark">
+                    <a href="/gebouwtype-pagina.html" class="card-footer-item has-text-white">Toon details</a>
+                  </footer>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-white-ter">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <a class="images pb-4">
+              <img
+                src="/images/rev-logo-400.png"
+                alt=""
+                width="100px"
+                height="fit-content"
+              />
+            </a>
+            <div class="content pt-5">
+              <p><strong>© 2022 Vastgoed Adviseurs Online</strong></p>
+              <p>Alle rechten voorbehouden.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Documenten</h3>
+              <p><a href="#">Webinar Real Estate Valuator</a></p>
+              <p><a href="#">Aanmelden nieuwsbrief</a></p>
+              <p><a href="#">Planmatig onderhoud</a></p>
+              <p><a href="#">REV Professionals</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Neem contact met ons op</h3>
+              <p><strong>Vastgoed Adviseurs Online</strong></p>
+              <p><a href="tel:0202201700">020 - 220 1700</a></p>
+              <p><a href="mailto:info@evao.nl">info@evao.nl</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ./ einde Footer -->
+  </body>
+</html>

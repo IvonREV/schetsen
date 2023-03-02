@@ -1,0 +1,220 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projectenoverzicht pagina</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9acd5aad96.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/collapse.js"></script>
+    <script defer src="/js/tabs.js"></script>
+    <script defer src="/js/menu.js"></script>
+    <script
+      type="text/javascript"
+      src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="styles/custom.css" />
+    <!-- <link rel="stylesheet" href="styles/debug.css" />-->
+
+    <style>
+      figure.rev-image.has-text-left {
+    margin-left: 0;
+}
+a.card-header-icon.card-toggle {
+    color: white;
+}
+    </style>
+  </head>
+  <body>
+    <!-- main menu website -->
+    <section class="section"></section>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- always left -->
+          <a class="navbar-item" href="/index.html">
+            <img
+              src="/images/rev-logo-400.png"
+              style="max-height: 5rem; width: fit-content"
+            />
+          </a>
+          <a
+            class="navbar-burger rev-menu-toggle-mobile"
+            role="button"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="mainMenuWebsite"
+          >
+            <!-- always in navbar-brand -->
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="mainMenuWebsite" class="navbar-menu is-hidden-touch">
+          <!-- desktop visible -->
+          <div class="navbar-start">
+            <!-- left side appearance -->
+            <a class="navbar-item" href="#"> Projecten</a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Kennisbank
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> nader te bepalen </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+            <a class="navbar-item" href="#"> Onderhoudskosten </a>
+            <a class="navbar-item" href="#"> Bouwgebreken </a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Beheer
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> API tester </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+          </div>
+          <div class="navbar-end">
+            <!-- right side appearance -->
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="#"> MIJN PROJECTEN </a>
+                <a class="button is-secundary" href="#"> UITLOGGEN </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end main menu -->
+
+    <section class="section">
+      <h1 class="title is-3 has-text-weight-bold has-text-centered">
+        Woningtype die gekozen is
+      </h1>
+      <h2 class="subtitle is-4 has-text-centered">
+        eigenschappen van dit gebouw
+      </h2>
+    </section>
+
+    <section class="section is-small has-background-white-ter">
+        <div class="buttons is-centered">
+      <div id="rev-kenmerken-btn">
+        <button class="button is-responsive has-text-weight-bold has-text-white-bis">Kenmerken</button>
+      </div>
+      <div id="rev-onderhoudkosten-btn">
+      <button class="button is-responsive has-text-weight-bold has-text-white-bis">Onderhoudskosten</button>
+      </div>
+      <div id="rev-rapportage-btn">
+      <button class="button is-responsive has-text-weight-bold has-text-white-bis">Rapportage</button>
+    </div>
+    <div id="rev-mjov-btn">
+      <button class="button is-responsive has-text-weight-bold has-text-white-bis">MJOV</button>
+    </div>
+</section>
+
+<section class="section">
+	<div class="container">
+
+		<div class="card is-fullwidth">
+			<header class="card-header has-background-info">
+				<p class="card-header-title has-text-white-bis">Locatie</p>
+				<a class="card-header-icon card-toggle">
+					<i class="fa fa-angle-left"></i>
+				</a>
+			</header>
+
+			<div class="card-content has-background-grey-lighter is-hidden">
+				<div class="content">
+					<div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                          <label class="label">Naam</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                            <p class="control is-expanded has-icons-left">
+                              <input class="input" type="text" placeholder="Naam...">
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+
+                      <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                          <label class="label">Referentieobject</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                            <figure class="rev-image has-text-left"><img src="/images/WT1bewerkt.jpg"></figure>
+                          </div>
+                        </div>
+                      </div>
+<!--upload foto-->
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Upload eigen foto</label>
+    </div>
+    
+    <div class="field-body">
+
+<div id="file-js-example" class="file has-name">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fas fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Kies een foto...
+        </span>
+      </span>
+      <span class="file-name">
+        Geen afbeelding geupload...
+      </span>
+    </label>
+  </div>
+  </div>
+  
+  <script>
+    const fileInput = document.querySelector('#file-js-example input[type=file]');
+    fileInput.onchange = () => {
+      if (fileInput.files.length > 0) {
+        const fileName = document.querySelector('#file-js-example .file-name');
+        fileName.textContent = fileInput.files[0].name;
+      }
+    }
+  </script>
+
+				</div>
+			</div>
+
+		</div>
+	
+	</div>
+</section>
+
+
+  </body>
+</html>

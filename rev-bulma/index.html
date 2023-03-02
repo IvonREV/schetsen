@@ -1,0 +1,398 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myREV voorbeeld site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script defer src="/js/menu.js"></script>
+    <script defer src="/js/tabs.js"></script>
+    <link rel="stylesheet" href="styles/custom.css" />
+    <!--<link rel="stylesheet" href="styles/debug.css">-->
+
+    <style></style>
+  </head>
+  <body>
+    <!-- main menu website -->
+    <section class="section"></section>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- always left -->
+          <a class="navbar-item" href="#homepage">
+            <img
+              src="/images/rev-logo-400.png"
+              style="max-height: 5rem; width: fit-content"
+            />
+          </a>
+          <a
+            class="navbar-burger rev-menu-toggle-mobile"
+            role="button"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="mainMenuWebsite"
+          >
+            <!-- always in navbar-brand -->
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="mainMenuWebsite" class="navbar-menu is-hidden-touch">
+          <!-- desktop visible -->
+          <div class="navbar-start">
+            <!-- left side appearance -->
+            <a class="navbar-item" href="index.html"> Home </a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link is-arrowless rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Algemeen
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> Webinar & events </a>
+                <a class="navbar-item"> Fotowijzer Waarderingskamer </a>
+                <a class="navbar-item"> Planmatig onderhoud </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+            <a class="navbar-item" href="#"> WikiVastgoed </a>
+            <a class="navbar-item" href="/artikelniveau-pagina-tabs.html">
+              Artikelpagina
+            </a>
+            <!-- begin dropdown list -->
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a
+                class="navbar-link is-arrowless rev-menu-toggle-mobile"
+                data-target="algemeen-menu"
+              >
+                Support
+              </a>
+              <div id="algemeen-menu" class="navbar-dropdown is-hidden-touch">
+                <a class="navbar-item"> Veelgestelde vragen </a>
+                <a class="navbar-item"> Handleidingen REV </a>
+                <a class="navbar-item"> Instructiefilms </a>
+              </div>
+            </div>
+            <!-- end dropdown list -->
+          </div>
+          <div class="navbar-end">
+            <!-- right side appearance -->
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="#"> INLOGGEN </a>
+                <a class="button is-secundary" href="#"> REGISTREREN </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end main menu -->
+
+    <section class="hero is-medium">
+      <!-- .hero-body -->
+      <header class="hero-body center has-background-white-ter">
+        <div class="has-text-centered">
+          <h1 class="subtitle is-1 has-text-black has-text-weight-bold">
+            Real Estate Valuator
+          </h1>
+          <h2 class="title is-4 has-text-weight-light has-text-black">
+            Dé online tool voor vastgoedprofessionals.
+          </h2>
+          <p class="is-size-5">
+            Bereken met het grootste gemak uw onderhoudskosten in myREV.
+          </p>
+          <button class="button is-primary is-info-light is-rounded mt-4">
+            <a href="https://vaoshop.nl" target="_blank" style="color: white"
+              >Bekijk abonnementen</a
+            >
+          </button>
+        </div>
+      </header>
+      <!-- /.hero-body -->
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="title">Features</h2>
+
+            <i class="fa-solid fa-square-check"></i>
+
+            <div class="icon-text">
+              <span class="icon has-text-success">
+                <i class="fas fa-check-square"></i>
+              </span>
+              <h3><strong>MJOP met een druk op de knop</strong></h3>
+            </div>
+            <p class="block">
+              Maak gemakkelijk een duurzame meerjarenonderhoudsplanning.
+            </p>
+          </div>
+          <div class="column is-three-fifths">
+            <figure class="image is-full-width">
+              <img src="images/mockup-tablet-vb.png" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-small has-background-link-light">
+      <div class="container is-max-desktop">
+        <div class="box has-background-primary">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img
+                  src="https://bulma.io/images/placeholders/128x128.png"
+                  alt="Image"
+                />
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content has-text-white">
+                <p>
+                  <strong class="has-text-white">John Smith</strong><br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean efficitur sit amet massa fringilla egestas. Nullam
+                  condimentum luctus turpis.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium">
+      <div class="container">
+        <div class="columns">
+          <div class="column has-text-right">
+            <h2 class="subtitle"><strong>Inclusief handboek</strong></h2>
+            <p>
+              Inclusief Vastgoed Taxatiewijzer Beleggingsvastgoed met de meest
+              bekende gebouwtypen verdeeld over woningen, kantoren, garages,
+              agrarisch.
+            </p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Inclusief online softwaretool</strong>
+            </h2>
+            <p>
+              De Real Estate Valuator bevat meer dan 350 gebouwen om de
+              onderhoudskosten mee te berekenen, daarnaast ook bouwgebreken en
+              meer handige tools.
+            </p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Alle bouwgebreken snel vindbaar 1&2</strong>
+            </h2>
+            <p>
+              REV omvat meer dan 350 bouwgebreken en er komen jaarlijks
+              tientallen bij.
+            </p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Altijd up-to-date</strong>
+            </h2>
+            <p>
+              Met een abonnement bent u zeker van de juiste tarieven en krijgt u
+              de Vastgoed Taxatiewijzer ieder jaar in uw brievenbus.
+            </p>
+          </div>
+          <div class="column has-text-centered">
+            <figure class="image">
+              <img src="images/tablet-mockup-front.png" />
+            </figure>
+            <a class="button is-primary" href="#"> Bekijk de video's </a>
+          </div>
+          <div class="column has-text-left">
+            <h2 class="subtitle">
+              <strong>Bereken MJOV's 2</strong>
+            </h2>
+            <p>
+              In REV kunt u heel gemakkelijk MJOV's berekenen tot wel 99 jaar
+              vooruit en exporteren naar Excel.
+            </p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Inclusief prijzenbestand 1&2</strong>
+            </h2>
+            <p>Vind gemakkelijk alle onderhoudskosten via de NLsFB codering.</p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Nooit meer back-ups maken</strong>
+            </h2>
+            <p>
+              Alle data wordt gemakkelijk opgeslagen op onze beveiligde cloud
+              opslag.
+            </p>
+            <br />
+            <h2 class="subtitle">
+              <strong>Inclusief handige helpdesk</strong>
+            </h2>
+            <p>
+              Heeft u bouwkundige vragen, juridische of IT vragen? Bel
+              020-2201700 en u wordt persoonlijk geholpen
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABS - TODO: Uitlijning mobiel goedzetten. Op mobiel lijnen de tabs niet goed uit omdat ik op de artikelenpagina divID heb aangemaakt voor artikelen met tabs. -->
+    <div class="hero-foot">
+      <h2 class="title has-text-centered">Bekijk abonnementen</h2>
+      <div id="rev-abotabs">
+        <div class="tabs is-boxed is-fullwidth is-medium has-text-weight-bold">
+          <div class="container has-background-link-light">
+            <ul>
+              <li class="tab is-active" onclick="openTab(event,'WebDev')">
+                <a>Basis</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'WebAud')">
+                <a>Business</a>
+              </li>
+              <li class="tab" onclick="openTab(event,'Support')">
+                <a>Pro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div id="WebDev" class="content-tab">
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image is-16by9">
+              <image src="images/350-basispakket-myrev.png"></image>
+            </figure>
+          </div>
+          <div class="column is-two-third">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <br />
+            <button class="button is-info is-rounded is-outlined">
+              Meer informatie
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="WebAud" class="content-tab" style="display: none">
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image is-16by9">
+              <image src="images/350-businesspakket-myrev.png"></image>
+            </figure>
+          </div>
+          <div class="column is-two-third">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <br />
+            <button class="button is-info is-rounded is-outlined">
+              Meer informatie
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="Support" class="content-tab" style="display: none">
+        <div class="columns">
+          <div class="column is-one-third">
+            <figure class="image is-16by9">
+              <image src="images/350-propakket-myrev.png"></image>
+            </figure>
+          </div>
+          <div class="column is-two-third">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <br />
+            <button class="button is-info is-rounded is-outlined">
+              Meer informatie
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer has-background-white-ter">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <a class="images pb-4">
+              <img
+                src="/images/rev-logo-400.png"
+                alt=""
+                width="100px"
+                height="fit-content"
+              />
+            </a>
+            <div class="content pt-5">
+              <p><strong>© 2022 Vastgoed Adviseurs Online</strong></p>
+              <p>Alle rechten voorbehouden.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Documenten</h3>
+              <p><a href="#">Webinar Real Estate Valuator</a></p>
+              <p><a href="#">Aanmelden nieuwsbrief</a></p>
+              <p><a href="#">Planmatig onderhoud</a></p>
+              <p><a href="#">REV Professionals</a></p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <h3>Neem contact met ons op</h3>
+              <p><strong>Vastgoed Adviseurs Online</strong></p>
+              <p><a href="tel:0202201700">020 - 220 1700</a></p>
+              <p><a href="mailto:info@evao.nl">info@evao.nl</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ./ einde Footer -->
+  </body>
+</html>
